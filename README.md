@@ -2,7 +2,7 @@
 
 ![equipe03](https://i.imgur.com/MAyFXGV.png)
 
-Bem-vindo ao repositório da nossa Equipe de Desenvolvimento Código Certo Coders! 
+Bem-vindo ao repositório da nossa Equipe de Dados da comunidade Código Certo Coders! 
 - Queremos ser reconhecidos pela qualidade e pela capacidade de transformar desafios em oportunidades.
 - Nossa missão é cultivar um ambiente colaborativo onde a criatividade e a inovação floresçam em cada projeto.
 - Promovemos uma cultura de aprendizado contínuo e crescimento pessoal entre todos os membros da equipe.
@@ -21,11 +21,21 @@ Bem-vindo ao repositório da nossa Equipe de Desenvolvimento Código Certo Coder
 
 # 🎯 Tecnologias Utilizadas
 
-- **Banco de Dados:** PostgreSQL
-- **Controle de Versão:** Git
 - **Gerenciador de Projeto:** ClickUp
+- **Controle de Versão:** Git
+- **QA (Controle de Qualidade):** JUnit, pytest
+### Engenheiros de Dados
+- **Linguagem:** Python
+- **Banco de Dados:** PostgreSQL
 - **Ferramenta de Visualização:** Power BI
-- **QA (Controle de Qualidade):** Jest, Cypress
+### Cientista de Dados
+- **Linguagem:** Python
+- **Banco de Dados:** PostgreSQL
+- **Ferramenta de Visualização:** Power BI
+### Analista de Dados
+- **Linguagem:** Python
+- **Banco de Dados:** PostgreSQL
+- **Ferramenta de Visualização:** Power BI
 ---
 
 🔗 **Mantenha-se Conectado:**
