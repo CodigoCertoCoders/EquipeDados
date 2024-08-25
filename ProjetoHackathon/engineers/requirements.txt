@@ -1,2 +1,4 @@
 gdown==5.2.0
 pandas==2.2.2
+python-dotenv==1.0.1
+sqlalchemy==2.0.32
