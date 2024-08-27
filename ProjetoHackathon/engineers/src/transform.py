@@ -40,7 +40,7 @@ def main():
        'frameworks_bibliotecas', 'disponibilidade_horario',
        'preferencias_colaboracao', 'liderar_projetos']"""
 
-    diretorio_local = './ProjetoHackathon/engineers/data/Código Certo Coders.csv'
+    diretorio_local = '../data/Código Certo Coders.csv'
     try:
         df_planilha_hackaton = pd.read_csv(diretorio_local, sep=',')
     except FileNotFoundError:
