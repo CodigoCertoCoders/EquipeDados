@@ -1,27 +1,29 @@
- - ***Preparação do Ambiente***
+
+## Preparação do Ambiente
 
 Este README fornece instruções para configurar o ambiente necessário para executar os scripts de alocação de equipe e análise de dados. Seguindo estes passos, você garantirá que todas as dependências estejam instaladas e o ambiente esteja pronto para uso.
 
-Requisitos
+### Requisitos
+
 Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
-Python 3.10 ou superior: Pode ser baixado do site oficial do Python.
-pip: O gerenciador de pacotes do Python.
-Configuração do Ambiente
+- **Python 3.10 ou superior:** Pode ser baixado do [site oficial do Python](https://www.python.org/downloads/).
+- **pip:** O gerenciador de pacotes do Python.
 
-- Programas: 
-VS code 
-pycharme comunity 
+### Configuração do Ambiente
 
+#### Programas:
 
-1. Criar e Ativar um Ambiente Virtual
+- VS Code
+- PyCharm Community Edition
+
+### 1. Criar e Ativar um Ambiente Virtual
+
 Para manter as dependências isoladas, é recomendado usar um ambiente virtual. Execute os seguintes comandos no terminal:
 
-bash
-Copiar código
+```bash
 # Criar um ambiente virtual
 python -m venv venv
-
 
 # Ativar o ambiente virtual
 # No Windows
@@ -29,91 +31,95 @@ venv\Scripts\activate
 
 # No macOS/Linux
 source venv/bin/activate
+```
 
-2. Instalar Dependências
-Instale as bibliotecas necessárias usando o pip. Crie um arquivo requirements.txt com o seguinte conteúdo e instale as dependências:
+### 2. Instalar Dependências
 
-```requirements.txt```
-```pandas==2.0.0```
-```numpy==1.24.0```
-```pulp==2.7.0```
-```matplotlib==3.7.1```
-```scikit-learn==1.3.0```
+Instale as bibliotecas necessárias usando o pip. Crie um arquivo `requirements.txt` com o seguinte conteúdo e instale as dependências:
 
+```txt
+pandas==2.0.0
+numpy==1.24.0
+pulp==2.7.0
+matplotlib==3.7.1
+scikit-learn==1.3.0
+```
 
-- ***Instale as dependências com o comando:***
+**Instale as dependências com o comando:**
 
-bash
-Copiar código
+```bash
 pip install -r requirements.txt
+```
 
+### 3. Executar o Script
 
-3. Executar o Script
 Após preparar o ambiente e o script, você pode executar o script com o comando:
 
-bash
-Copiar código
-git clone `` link do repositorio`` 
+```bash
+git clone [link do repositório]
+```
 
-apos o git clone vai baixar todas as dependencias dos arquivos na pasta enginers 
-tem um arquuivo dentro da pasta src chamnado extract.py que assim executado ele vai baixar o **arquivo.csv** .
+Após o `git clone`, todas as dependências dos arquivos serão baixadas. Na pasta `engineers`, há um arquivo dentro da pasta `src` chamado `extract.py`. Ao executá-lo, ele fará o download do **arquivo.csv**.
 
+### Uso com Jupyter Notebook ou Google Colab
 
- - ***Uso com Jupyter Notebook ou Google Colab***
-  
-Se você preferir usar Jupyter Notebook ou Google Colab, siga estas instruções:
+#### Jupyter Notebook
 
-Jupyter Notebook
-Instalar o Jupyter Notebook
+1. **Instalar o Jupyter Notebook**
 
-Se ainda não tiver o Jupyter Notebook instalado, você pode instalá-lo com o comando:
+   Se ainda não tiver o Jupyter Notebook instalado, você pode instalá-lo com o comando:
 
-bash
-Copiar código
-pip install notebook
-Iniciar o Jupyter Notebook
+   ```bash
+   pip install notebook
+   ```
 
-Inicie o Jupyter Notebook com o comando:
+2. **Iniciar o Jupyter Notebook**
 
-bash
-Copiar código
-jupyter notebook
-Isso abrirá uma nova janela do navegador com o painel do Jupyter Notebook.
+   Inicie o Jupyter Notebook com o comando:
 
-Criar um Novo Notebook
+   ```bash
+   jupyter notebook
+   ```
 
-No painel do Jupyter Notebook, crie um novo notebook e cole o código do script alocacao_equipe.py nas células do notebook.
+   Isso abrirá uma nova janela do navegador com o painel do Jupyter Notebook.
 
-Executar o Notebook
+3. **Criar um Novo Notebook**
 
-Execute as células do notebook para processar os dados e gerar o arquivo CSV.
+   No painel do Jupyter Notebook, crie um novo notebook e cole o código do script `alocacao_equipe.py` nas células do notebook.
 
-Google Colab
-Abrir o Google Colab
+4. **Executar o Notebook**
 
-Acesse Google Colab em seu navegador.
+   Execute as células do notebook para processar os dados e gerar o arquivo CSV.
 
-Criar um Novo Notebook
+#### Google Colab
 
-Crie um novo notebook clicando em "File" > "New notebook".
+1. **Abrir o Google Colab**
 
-Instalar Dependências
+   Acesse o [Google Colab](https://colab.research.google.com/) em seu navegador.
 
-Execute as seguintes células para instalar as dependências necessárias:
+2. **Criar um Novo Notebook**
 
-python
-Copiar código
-!pip install pandas pulp
-Fazer Upload do Arquivo CSV
+   Crie um novo notebook clicando em "File" > "New notebook".
 
-Faça upload do seu arquivo CSV para o Google Colab com o seguinte código:
+3. **Instalar Dependências**
 
-python
-Copiar código
-from google.colab import files
-uploaded = files.upload()
-Isso abrirá uma caixa de diálogo para selecionar o arquivo CSV.
+   Execute as seguintes células para instalar as dependências necessárias:
 
-Colar e Executar o Código
+   ```python
+   !pip install pandas pulp
+   ```
 
-**Cole o código do script alocacao_equipe.py em uma célula do notebook e execute a célula para processar os dados e gerar o arquivo CSV.**
+4. **Fazer Upload do Arquivo CSV**
+
+   Faça upload do seu arquivo CSV para o Google Colab com o seguinte código:
+
+   ```python
+   from google.colab import files
+   uploaded = files.upload()
+   ```
+
+   Isso abrirá uma caixa de diálogo para selecionar o arquivo CSV.
+
+5. **Colar e Executar o Código**
+
+   Cole o código do script `alocacao_equipe.py` em uma célula do notebook e execute a célula para processar os dados e gerar o arquivo CSV.
