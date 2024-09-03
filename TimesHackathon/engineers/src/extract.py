@@ -2,7 +2,7 @@ import os
 import gdown
 
 def baixar_arquivos_google_drive(url_pasta, diretorio_local):
-    '''Baixa todos os arquivos de uma pasta do Google Drive para o diretório local especificado.'''
+    'Baixa todos os arquivos de uma pasta do Google Drive para o diretório local especificado.'
     os.makedirs(diretorio_local, exist_ok=True)
     try:
         gdown.download_folder(url_pasta, output=diretorio_local, quiet=False, use_cookies=False)
@@ -25,7 +25,7 @@ def listar_arquivos_csv(diretorio):
 
 def main():
     url_pasta = 'https://drive.google.com/drive/folders/1TkyHYcJ0U_dWYeoxaBY_di-WgLNlA5mF'
-    diretorio_local = './ProjetoHackathon/engineers/data'
+    diretorio_local = './Data'
     
     if baixar_arquivos_google_drive(url_pasta, diretorio_local):
         arquivos_csv = listar_arquivos_csv(diretorio_local)
