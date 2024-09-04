@@ -1,4 +1,4 @@
-from transform import main
+from transform import transformar_dados
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import pandas as pd
@@ -13,7 +13,7 @@ def get_engine():
 
 def insert_db():
     """Função para inserir dados no banco"""
-    df = main()
+    df = transformar_dados()
     engine = get_engine()
     try:
         with engine.begin() as connection:
