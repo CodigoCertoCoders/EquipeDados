@@ -1,3 +1,4 @@
+from src.extract import retornar_arquivo
 import pandas as pd
 import warnings
 
@@ -40,7 +41,7 @@ def main():
        'frameworks_bibliotecas', 'disponibilidade_horario',
        'preferencias_colaboracao', 'liderar_projetos']"""
 
-    diretorio_local = '../data/Código Certo Coders.csv'
+    diretorio_local = retornar_arquivo()
     try:
         df_planilha_hackaton = pd.read_csv(diretorio_local, sep=',')
     except FileNotFoundError:

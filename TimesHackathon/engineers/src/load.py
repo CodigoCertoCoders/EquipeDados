@@ -1,11 +1,9 @@
-from transform import main
+from src.transform import main
 from sqlalchemy import create_engine
-from dotenv import load_dotenv
 import pandas as pd
 import streamlit as st
 import os
 
-load_dotenv()
 DATABASE_URL = st.secrets["DATABASE_URL"]
 
 def get_engine():
